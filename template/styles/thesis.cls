@@ -239,12 +239,12 @@
       {\large and the \par}
       %\bigskip
       {\large Faculty of the Graduate College \par}
-      {\large \univname \par}
       %\bigskip
       {\large In Partial Fulfillment of the Requirements for the Degree \par}
       %\bigskip
       {\large \myDegree \par}
       %\bigskip
+      {\large \univname \par}
       \vfill
       {\large by \par}
       \smallskip

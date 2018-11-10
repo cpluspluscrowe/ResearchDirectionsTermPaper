@@ -5,14 +5,15 @@
 
 % Instructions are written inline...
 
-\documentclass[letterpaper,11pt,oneside]{template/styles/thesis}
+\documentclass[letterpaper,12pt,oneside]{template/styles/thesis}
+\usepackage{template/styles/lstpatch}
 \input{template/styles/packages.tex}
 \input{properties.tex} % 1. Update properties with title, name, etc...
 
 \begin{document}
   \frontmatter
 
-  \include{template/sections/title}
+  \input{template/sections/title.tex}
   \include{template/sections/abstract} % 2. Complete the abstract.
   \include{template/sections/acknowledgements} % 3. Complete the acknowledgements.
   \input{template/sections/tableOfContents.tex}
