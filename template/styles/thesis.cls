@@ -230,19 +230,8 @@
       {\huge \bf \@title \par}
       %\bigskip
       \begin{spacing}{2}
-      {\large A Thesis \par}
       \vfill
-      {\large Presented to the \par}
-      %\bigskip
-      {\large \deptname \par}
-      %\bigskip
-      {\large and the \par}
-      %\bigskip
-      {\large Faculty of the Graduate College \par}
-      %\bigskip
-      {\large In Partial Fulfillment of the Requirements for the Degree \par}
-      %\bigskip
-      {\large \myDegree \par}
+      {\large For Research Directions \par}
       %\bigskip
       {\large \univname \par}
       \vfill
@@ -252,7 +241,7 @@
       \smallskip
       {\large \@date \par}
       \vfill
-      {\large \underline{Supervisory Committee} \par}
+      {\large \underline{Supervisor} \par}
       %\bigskip
       {\large \myFaculty \par}
     \end{spacing}
