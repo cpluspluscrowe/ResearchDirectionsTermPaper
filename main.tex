@@ -1,0 +1,36 @@
+\documentclass[letterpaper,11pt,oneside]{template/styles/thesis}
+\input{template/styles/packages.tex}
+\input{properties.tex} % 1. Update properties with title, name, etc...
+
+\begin{document}
+  \frontmatter
+
+  \input{template/sections/title.tex}
+  \input{template/sections/abstract.tex} % 2. Complete the abstract.
+  \input{template/sections/tableOfContents.tex}
+
+  \setstretch{2}
+  \mainmatter
+  \pagestyle{fancy}
+
+\input{sections/chapters/Introduction.tex}
+
+    \addtocontents{toc}{\vspace{2em}}
+
+  \appendix
+  \input{sections/appendices/a_analysis.tex} % 6. Create and add appendices as needed.
+
+  \backmatter
+  \setstretch{1} 
+  \label{Bibliography}
+  \bibliographystyle{apalike}
+
+  \begingroup
+    \raggedright
+    \sloppy
+    \bibliography{references} % 7. Include your references in references.bib.
+  \endgroup 
+
+  
+
+\end{document}

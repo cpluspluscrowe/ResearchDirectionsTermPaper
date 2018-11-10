@@ -1,0 +1,71 @@
+% Add your own packages here, 
+% these existing packages can be removed if necessary
+% not that more packages are imported in Thesis.cls, '
+%  but those should not be changed if you don't know what you are doing...
+
+
+\usepackage[utf8]{inputenc} % for writing other that basic characters
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+%Todonotes is a great addition for adding comments! You should definitely try it out
+\usepackage[disable]{todonotes}
+
+%A gantt chart maker, for when you need to make your proposal
+\usepackage{pgfgantt}
+\usepackage{rotating}
+\usepackage[graphicx]{realboxes}
+\usepackage{multirow}
+
+\usepackage{apalike}
+
+% Include any extra LaTeX packages required
+%\usepackage[square, numbers, comma, sort&compress]{natbib}  % Use the "Natbib" style for the references in the Bibliography
+%\usepackage[comma]{natbib} 
+%\bibliographystyle{apalike}
+\usepackage{verbatim}  % Needed for the "comment" environment to make LaTeX comments
+%5%\usepackage{vector}  % Allows "\bvec{}" and "\buvec{}" for "blackboard" style bold vectors in maths
+
+\newenvironment{packed_desc}{
+\begin{description}
+%undoing macros used to save space in ACM format
+ \setlength{\itemsep}{1pt}
+ \setlength{\parskip}{0pt}
+ \setlength{\parsep}{0pt}
+ \setlength{\labelwidth}{0pt}
+}{\end{description}}
+
+\newenvironment{pQuote}	
+{\begin{changemargin}{1em}{1em}\begin{em}\footnotesize}
+{\end{em}\end{changemargin}}
+
+\usepackage{enumitem}
+\setlist{parsep=0pt,listparindent=\parindent}
+
+% Things added for my purposes
+
+% Add formatted code macro
+\newcommand{\code}[1]{\texttt{#1}}
+
+% Add ability to add full pages from PDFs
+\usepackage{pdfpages}
+
+\usepackage{tabu}
+
+% Add ability to rotate a table 90 degrees
+\usepackage{rotating}
+
+% Add ability to have customizable ragged right
+\usepackage{ragged2e}
+
+% Add ability to frame an image
+\usepackage[export]{adjustbox}
+
+% Add ability to have side-by-side images
+\usepackage{subcaption}
+
+% Add the ability to force linebreaks in cells
+\usepackage{makecell}
+
+% Add graphs
+\usepackage{pgfplots}
