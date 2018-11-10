@@ -1,0 +1,174 @@
+\begin{thebibliography}{}
+
+\bibitem[Baudiˇ and Pichl, ]{Baudi}
+Baudiˇ, P. and Pichl, J.
+\newblock {Sentence Pair Scoring : Towards Unified Framework}.
+\newblock (C).
+
+\bibitem[Crowe, 2018]{Crowe2018}
+Crowe, C. (2018).
+\newblock {Initial Related Work}.
+\newblock pages 1--4.
+
+\bibitem[Donahue et~al., ]{Donahue}
+Donahue, J., Hendricks, L.~A., Guadarrama, S., Rohrbach, M., Venugopalan, S.,
+  Saenko, K., Darrell, T., Austin, U.~T., Lowell, U., and Berkeley, U.~C.
+\newblock {Long-term Recurrent Convolutional Networks for Visual Recognition
+  and Description}.
+
+\bibitem[Enerative et~al., 2014]{Enerative2014}
+Enerative, F. O. R.~G., Of, M.~O., and Ideos, N. A.~V. (2014).
+\newblock {V (l ) m : a b f g m n v}.
+\newblock pages 1--15.
+
+\bibitem[Fan et~al., 2016]{Fan2016}
+Fan, Y., Lu, X., Li, D., and Liu, Y. (2016).
+\newblock {Video-Based Emotion Recognition using CNN-RNN and C3D Hybrid
+  Networks}.
+\newblock (November).
+
+\bibitem[Ghosh and Veale, 2016]{Ghosh2016}
+Ghosh, A. and Veale, T. (2016).
+\newblock {Fracking Sarcasm using Neural Network}.
+\newblock pages 161--169.
+
+\bibitem[Graves, ]{Graves}
+Graves, A.
+\newblock {Generating Sequences With Recurrent Neural Networks}.
+\newblock pages 1--43.
+
+\bibitem[Graves, 2014]{Graves2014}
+Graves, A. (2014).
+\newblock {Towards End-to-End Speech Recognition with Recurrent Neural
+  Networks}.
+\newblock 32.
+
+\bibitem[Hurri, 2003]{Hurri2003}
+Hurri, J. (2003).
+\newblock {Simple-Cell-Like Receptive Fields Maximize Temporal}.
+\newblock 691(3):663--691.
+
+\bibitem[Ji and Yu, 2010]{Ji2010}
+Ji, S. and Yu, K. (2010).
+\newblock {3D Convolutional Neural Networks for Human Action Recognition}.
+
+\bibitem[Karpathy et~al., 2015]{Karpathy2015}
+Karpathy, A., Toderici, G., Shetty, S., Leung, T., Sukthankar, R., and Fei-fei,
+  L. (2015).
+\newblock {Large-scale Video Classification with Convolutional Neural Networks
+  Presenter : Esha Uboweja Problem Classification of videos in sports
+  datasets}.
+\newblock (June 2014).
+
+\bibitem[Lan et~al., ]{Lan}
+Lan, Z., Lin, M., Li, X., Hauptmann, A.~G., and Raj, B.
+\newblock {Beyond Gaussian Pyramid : Multi-skip Feature Stacking for Action
+  Recognition}.
+
+\bibitem[Le et~al., ]{Le}
+Le, Q.~V., Zou, W.~Y., Yeung, S.~Y., and Ng, A.~Y.
+\newblock {Learning hierarchical invariant spatio-temporal features for action
+  recognition with independent subspace analysis}.
+
+\bibitem[Lee and Dernoncourt, 2016]{Lee2016}
+Lee, J.~Y. and Dernoncourt, F. (2016).
+\newblock {Sequential Short-Text Classification with Recurrent and
+  Convolutional Neural Networks}.
+
+\bibitem[M and Yuille, 2015]{M2015}
+M, N. E. N.~E. and Yuille, A. (2015).
+\newblock {D c m r n n ( -rnn)}.
+\newblock 1090(2014):1--17.
+
+\bibitem[Merri and Fellow, 2014]{Merri2014}
+Merri, B.~V. and Fellow, C.~S. (2014).
+\newblock {Learning Phrase Representations using RNN Encoder – Decoder for
+  Statistical Machine Translation}.
+\newblock pages 1724--1734.
+
+\bibitem[Michalski and Memisevic, ]{Michalski}
+Michalski, V. and Memisevic, R.
+\newblock {Modeling Deep Temporal Dependencies with Recurrent “ Grammar Cells
+  ”}.
+\newblock pages 1--9.
+
+\bibitem[Mobahi et~al., 1996]{Mobahi1996}
+Mobahi, H., Weston, J., America, N. E. C.~L., and Way, I. (1996).
+\newblock {Deep Learning from Temporal Coherence in Video}.
+
+\bibitem[Sainath et~al., ]{Sainath}
+Sainath, T.~N., Vinyals, O., Senior, A., and York, N.
+\newblock {No Title}.
+\newblock pages 1--5.
+
+\bibitem[Simonyan, ]{Simonyan}
+Simonyan, K.
+\newblock {Two-Stream Convolutional Networks for Action Recognition in Videos}.
+\newblock pages 1--9.
+
+\bibitem[Simonyan and Zisserman, 2015]{Simonyan2015}
+Simonyan, K. and Zisserman, A. (2015).
+\newblock {Very Deep Convolutional Networks for Large-Scale Image Recognition}.
+\newblock {\em International Conference on Learning Representations (ICRL)},
+  pages 1--14.
+
+\bibitem[Soomro et~al., 2012]{Soomro2012}
+Soomro, K., Zamir, A.~R., Shah, M., and Recognition, A. (2012).
+\newblock {UCF101 : A Dataset of 101 Human Actions Classes From Videos in The
+  Wild}.
+\newblock (November).
+
+\bibitem[Srivastava, 2014]{Srivastava2014}
+Srivastava, N. (2014).
+\newblock {Unsupervised Learning of Video Representations using LSTMs}.
+
+\bibitem[Srivastava, 2015]{Srivastava2015}
+Srivastava, N. (2015).
+\newblock {Unsupervised Learning of Video Representations using LSTMs}.
+\newblock 37.
+
+\bibitem[Susskind et~al., ]{Susskind}
+Susskind, J., Memisevic, R., Hinton, G., and Pollefeys, M.
+\newblock {Modeling the joint density of two images under a variety of
+  transformations}.
+
+\bibitem[Sutskever, ]{Sutskever}
+Sutskever, I.
+\newblock {Sequence to Sequence Learning with Neural Networks}.
+\newblock pages 1--9.
+
+\bibitem[Understanding, ]{Understanding}
+Understanding, R. N. N. C.-f.~L.
+\newblock {DiSAN: Directional Self-Attention Network for RNN/CNN-Free Language
+  Understanding}.
+
+\bibitem[Vosoughi and Roy, 2016]{Vosoughi2016}
+Vosoughi, S. and Roy, D. (2016).
+\newblock {Tweet2Vec : Learning Tweet Embeddings Using}.
+\newblock pages 16--19.
+
+\bibitem[Wang et~al., ]{Wang}
+Wang, J., Yang, Y., Mao, J., Huang, Z., Huang, C., and Xu, W.
+\newblock {CNN-RNN : A Unified Framework for Multi-label Image Classification}.
+\newblock pages 2285--2294.
+
+\bibitem[Wang et~al., 2016]{Wang2016}
+Wang, J., Yu, L.-c., Lai, K.~R., and Zhang, X. (2016).
+\newblock {Dimensional Sentiment Analysis Using a Regional CNN-LSTM Model}.
+\newblock pages 225--230.
+
+\bibitem[Yin et~al., 2016]{Yin2016}
+Yin, W., Kann, K., and Yu, M. (2016).
+\newblock {Comparative Study of CNN and RNN for Natural Language Processing ¨
+  †}.
+
+\bibitem[Yin and Sch, ]{Yin}
+Yin, W. and Sch, H.
+\newblock {ABCNN: Attention-Based Convolutional Neural Network for Modeling
+  Sentence Pairs ¨}.
+
+\bibitem[Zaremba and Com, 2013]{Zaremba2013}
+Zaremba, W. and Com, V.~G. (2013).
+\newblock {arXiv : 1409 . 2329v3 [ cs . NE ] 3 Nov 2014}.
+
+\end{thebibliography}

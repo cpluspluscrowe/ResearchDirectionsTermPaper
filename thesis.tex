@@ -1,0 +1,46 @@
+% This template was modified by Ian Koeppe and is based on the 
+% Graduate Thesis written by Sunil Patel, who based it on the 
+% ecsthesis template, under the LaTeX Project Public License
+% which can be found here: http://latex-project.org/lppl/.
+
+% Instructions are written inline...
+
+\documentclass[letterpaper,11pt,oneside]{template/styles/thesis}
+\input{template/styles/packages.tex}
+\input{properties.tex} % 1. Update properties with title, name, etc...
+
+\begin{document}
+  \frontmatter
+
+  \input{template/sections/title.tex}
+  \input{sections/abstract.tex} % 2. Complete the abstract.
+  \input{sections/acknowledgements.tex} % 3. Complete the acknowledgements.
+  \input{template/sections/tableOfContents.tex}
+  \input{template/sections/listOfFigures.tex}
+  \input{template/sections/listOfTables.tex}
+  \input{sections/dedication.tex} % 4. Complete the dedication.
+
+  \setstretch{2}
+  \mainmatter
+  \pagestyle{fancy}
+
+  \input{sections/chapters/Introduction.tex}
+
+  \addtocontents{toc}{\vspace{2em}}
+
+  \appendix
+  \input{sections/appendices/a_analysis.tex} % 6. Create and add appendices as needed.
+
+  \backmatter
+  \setstretch{1} 
+  \label{Bibliography}
+\bibliographystyle{apalike}
+
+  \begingroup
+    \raggedright
+    \sloppy
+    \bibliography{thesis}
+%    \cite{Srivastava2015,Michalski,Susskind,Lan,Crowe2018,Graves2014,Zaremba2013,Donahue,Merri2014,Le,Simonyan,Sutskever,Mobahi1996,Srivastava2014,Enerative2014,Graves,Soomro2012,Ji2010,Hurri2003,Karpathy2015,M2015,Sainath,Yin,Wang2016,Vosoughi2016,Ghosh2016,Fan2016,Understanding,Wang,Baudi,Yin2016,Lee2016,Simonyan2015}
+  \endgroup 
+
+\end{document}
