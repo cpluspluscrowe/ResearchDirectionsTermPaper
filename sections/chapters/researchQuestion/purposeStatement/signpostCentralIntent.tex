@@ -1,1 +1,13 @@
 \subsection{Signpost that establishes the central intent for the study?}
+
+My thesis was two-fold, initially it was creating simple neural network and convolutional neural networks in order to perform prediction on advertisements.
+Each network regressed and output that represented how well the advertisement performed on social media.  The second goal of my thesis was to somehow combine my analysis of NN and CNNs.
+The initial ideas were to average their regressed outputs, as an average equally weights outputs from both models.  Another idea was to feed each output into a new machine learning model.  The outputs from the NN and CNN were fed into a decision tree,
+hoping that the decision tree would create a result that performed better than simple averaging.  The decision tree was slightly beneficial, but overall the combination of the two models performed worse than each individual model.
+The result denoted that there was no obvious or simple way to combine machine learning models, especially models that were comprised of different data types, e.g. images and text data.
+
+The really interesting and fun part of the thesis occurred while exploring ways to combine the NN and CNN models.  The decided upon plan-of-action was to try another method for combining the NN and CNN.
+The thesis attempted to combine the the NN and CNN mid-model.  The important observation was that most of the model's computations were finished before the model's final output layer.
+The model's could be combined at the n-1 layer.  This allowed each model to stay mostly independent, while combining their data.  The result was a final model that performed better than the NN or CNN model.  The thesis found that combining models of different data types is interesting, difficult, and worth exploring.  The topic of combining models of different data types offers a lot of promise.  If researcher's can find better ways to model complex data, i.e. data that contains multiple data types, then researcher's and practitioners will have better tools for analyzing real-world data.  Most data in the world is complex, interconnected, and can be represented in many ways.  For example, medical diagnosing patients makes use of visual data, e.g. X-Rays and a set of symptons, which can be represented as text data.  Having ways to combine the analysis of text and image data can produce models that make better predictions on these datasets.
+
+
