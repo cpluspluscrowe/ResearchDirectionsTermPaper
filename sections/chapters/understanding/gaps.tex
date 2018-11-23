@@ -1,8 +1,21 @@
 \subsection{What is the gap between what is known and what needs to be known?}
 
-Research has analyzed data with single data types with a great degree of accuracy. There are commonplace techniques for analyzing each data type.  Moreover, these models are well-known and simple, such as CNNs for images, NN for text, and RNNs for images. Given that simple models work well on simple data types, an interesting question is how well simple models work with multiple data types.  This is a valid question and lies more in the arena of what needs to be known.  There has been less research analyzing multiple data types.  The research that has examined related data types focuses on the relationship between audio, movement, and images in videos.  A large gap is how well simple models perform with image and text data.
+% gap is discovering and extracting ML features that only exist when both data types are considered
 
-Research has also uncovered many advanced techniques for handling and analyzing complex data. Some of the complex techniques are worth mentioning when they interact with multiple data types. One such method is to extract features from each individual model and combine these into a final model.  Another technique uses LSTMs or auto-encoders to translate from one data type to another.  The encoded data type can be combined with the second data type.  
+Research has analyzed data with single data types with a great degree of accuracy. There are commonplace techniques for analyzing each data type.  Moreover, these models are well-known and simple, such as CNNs for videos, NN for text, and RNNs for images. Given that simple models work well on simple data types, an interesting question is how well simple models process multiple data types.  This is a valid question and lies more in the arena of what needs to be known.
+
+There has been less research analyzing multiple data types.  The research that has examined related data types focuses on the relationship between audio, movement, and images in videos.  A large gap is how well simple models perform with image and text data.
+
+Research has also uncovered many advanced techniques for handling and analyzing complex data. Some of the complex techniques are worth mentioning when they interact with multiple data types. % I need more on what needs to be known
+
+One such method is to extract features from each individual model and combine these into a final model.  Another technique uses LSTMs or auto-encoders to translate from one data type to another.  The encoded data type can be combined with the second data type.  % Expand and give more examples based on RW
+
+
+
+
+
+
+
 
 %%What is known is how to individually analyze data types with a great degree of accuracy.  There are also known techniques for translating data types to other types, such as transcribing actions in videos to text, or object recognition in images.  Data scientists have had success finding correlations between text and image data.  There are a few existing approaches.  One such approach is to extract features from each data type.  These features can then be fed into a NN that can find patterns within each data type.  Yet, extracting these features is complicated.  Features can be manually created or found by CNN or NN.  Yet, running data through a CNN or NN is time intensive and doesn't always result in meaningful featurs.  Feeding unmeaningful features into a third model might work, but it might not.  Moreover, extracting the initial features requires training a model on outputs. Each trained model is going to be biased to sense data type specific nuances, since that is how each model was trained.  The network might have poor weights for sensing interactions between data types.  All these situations are likely to lead to a poor result when combingin the outputs of different machine learning models.
 
