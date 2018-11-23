@@ -1,31 +1,29 @@
 \subsection{Formulate a question that specifies b.}
 
-This section formulates a question for the research gap that can be addressed.  There are multiple research questions.
-
 %%1. Can compound machine learning architectures that take text and images as inputs outperform individual models on text and images for existing machine learning benchmarks.  
 
+Concerning data that is composed of text and image data, there are feature interactions between data types that are measureable and in turn improve model performance.
+
+1. Complex data types can be trained on the same simple model, such as CNN, NN, and RNNs.
+
+2. A compound model can be constructed, which improves model performance, by training a combined model on test data that each individual models gets wrong.
+
+%3. Training an auto-encoder to translate from one data type to another 
+
+%Overarching research question: When modeling complex data that is comprised of text and image data, can architectures that combine text and image data discover new features that are useful for existing models.  These features are deemed useful if they can improve the final model's performance.
 
 
-Overarching research question: When modeling complex data that is comprised of text and image data, can architectures that combine text and image data discover new features that are useful for existing models.  These features are deemed useful if they can improve the final model's performance.
 
-1. Can text and image data be trained on the same architecture to produce significant features for existing models.
-2. Based on the pattern of 
+%2. Is it possible to extract correlations between text and image data  %%How can interplaying features be measured between text and image data.
 
-% concepts, observed phenomena, gather data, look for patterns, and develop theories
-% deductive, how to test the concept
+%3. Is there a better way to preprocess image and text data to capture correlations between the data%%How can text and image features be preprocessed to better capture interplaying features between text and image data
+%a. Specifically, will transforming text and image data into LSTMs make the data easier to process by traditional machine learning models
 
-1. Can compound machine learning architectures outperform find correlations between text and image data which are not captured by individual models on existing machine learning benchmarks
+%4. How does a CNN model act when trained on both image and text data  %%What is the accuracy like when both features are fed into the same machine learning model?
 
-2. Is it possible to extract correlations between text and image data  %%How can interplaying features be measured between text and image data.
+%5. How does a NN model act when trained on both image and text data
 
-3. Is there a better way to preprocess image and text data to capture correlations between the data%%How can text and image features be preprocessed to better capture interplaying features between text and image data
-a. Specifically, will transforming text and image data into LSTMs make the data easier to process by traditional machine learning models
+%6. Does combining the hidden layers from individual text and image-based attention models create a combined model that better detects correlations between image and text models.
+%    a. Can a third combined model be created based on the weights from two individual models.
 
-4. How does a CNN model act when trained on both image and text data  %%What is the accuracy like when both features are fed into the same machine learning model?
-
-5. How does a NN model act when trained on both image and text data
-
-6. Does combining the hidden layers from individual text and image-based attention models create a combined model that better detects correlations between image and text models.
-    a. Can a third combined model be created based on the weights from two individual models.
-
-8. Can LSTMs translate from text to images, and vice-versa to draw out correlated features.
+%8. Can LSTMs translate from text to images, and vice-versa to draw out correlated features.
