@@ -3,9 +3,15 @@
 
 Concerning data that is composed of text and image data, there are feature interactions between data types that are measureable and in turn improve model performance?
 
-1. Complex data types can be trained on the same simple model, such as CNN, NN, and RNNs.
+%1. An autoencoder trained on a concatenation of each data type can learn new featurs, so that when combined with individual models the model performance will improve.  This question will demonstrate how well autoencoders work at learning multiple data types.
 
-2. A compound model can be constructed, which improves model performance, by training a combined model on test data that each individual models gets wrong.
+1. Complex data types can be trained on the same simple model, such as CNN, NN, and RNNs so that the model outperforms either individual model, i.e. a CNN with images or a NN with text.  This research question will investigate how well or poorly standard models work on multiple data types. It can compare this performance with industry standards.
+
+2. LSTMs trained on a concatenation of text and image data will outperform LSTMs from one data type.  The purpose of comparing both data types to a single data type within LSTMs is to measure how well LSTMs handle multiple data types.
+
+3. Autoencoders trained on a concatenation of text and image data will outperform autoencoders trained on one data type.  The purpose of comparing both data types to a single data type is to measure how well autoencoders handle multiple data types.
+
+4. Combining the output of image-based CNN and text-based NN will create a model that performs better than either individual model.
 
 
 \input{sections/chapters/researchQuestion/openResearchProblems}
