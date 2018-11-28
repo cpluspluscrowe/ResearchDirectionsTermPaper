@@ -3,15 +3,15 @@
 
 Concerning data that is composed of text and image data, there are feature interactions between data types that are measureable and in turn improve model performance?
 
-%1. An autoencoder trained on a concatenation of each data type can learn new featurs, so that when combined with individual models the model performance will improve.  This question will demonstrate how well autoencoders work at learning multiple data types.
+%1. Complex data types can be trained on the same simple model (CNN and NN) so that the model outperforms either individual model CNN or NN model.  This research question will investigate how well or poorly standard models work on multiple data types. It can compare this performance with industry standards.
 
-1. Complex data types can be trained on the same simple model (CNN and NN) so that the model outperforms either individual model CNN or NN model.  This research question will investigate how well or poorly standard models work on multiple data types. It can compare this performance with industry standards.
+%1. LSTMs trained on a concatenation of text and image data will perform worse than LSTMs from one data type.  The purpose of comparing both data types to a single data type within LSTMs is to measure how well LSTMs handle multiple data types.  Current research uses LSTMs for both data types, but current research has not proven that doing so returns better results.
 
-2. LSTMs trained on a concatenation of text and image data will outperform LSTMs from one data type.  The purpose of comparing both data types to a single data type within LSTMs is to measure how well LSTMs handle multiple data types.
+%2. Autoencoders trained on a concatenation of text and image data will perform worse than autoencoders trained on one data type.  The purpose of comparing both data types to a single data type is to measure how well autoencoders handle multiple data types.
 
-3. Autoencoders trained on a concatenation of text and image data will outperform autoencoders trained on one data type.  The purpose of comparing both data types to a single data type is to measure how well autoencoders handle multiple data types.
+1. A concatenation of text and image data types on an autoencoder can learn new data by training on test data each individual model missed and penalizing the model for outputs that match either individual model.  In this way, the combined model is penalized for learning the most obvious features from any individual model.  By training the model on test data missed by both individual models, the model has data it can learn and improve from.  The hope is that by preventing the model from learning either of the individual model's main features, that the model will learn joint features.  This methodology is akin to boost-trees, but done so with multiple data types.
 
-4. Combining the output of image-based CNN and text-based NN will create a model that performs better than either individual model.
+%4. Combining the output of image-based CNN and text-based NN will create a model that performs better than either individual model.
 
 \section{Concepts}
 The concepts presented in the research question explore how well each standard model performs when trained on multiple data types.  The outcome of the research will give better detail on how well each model handles multiple data types.  Moreover, the research will also include how well a model performs when feed features from each individual model.  The study will give baseline information to future researchers on how well each model handles being trained on combination of text and image data.  Future research can build on the models which perform best in both experimenting with new architectures and preprocessing the data.
