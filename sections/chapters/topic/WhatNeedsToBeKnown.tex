@@ -1,7 +1,9 @@
 \subsection{What needs to be known?}
 
-When dealing with mutliple data types, the theory that relationships exist between each data type needs proving.  Any research demonstrating that relationships exist between data types would benefit the research community.  Moreover, methods for extracting relationships between data types can improve existing machine learning models on complex data types.  
+Research in multi-data types have assumed that LSTMs and autoencoders work well at processing combined inputs.  Yet, this has not been shown to be true.  Rather, research by Ngiam et al. found that RMBs tended to not learn combined representations because the single data type signals were strong enough to control the network weights.  Even when LSTMs have been used with multi-data type datasets, they have only been used to translate from one data type to another.  Moreover, LSTM performance on multi-data type datasets was largely a factor of increased memory (Ji Lee, YEAR).
 
-%1. Scenarios where multi-models work
-% 2. theories about why they work
-% 3. Methodology for drawing out related features between each data type
+The actual performance of LSTMs, RBMs, or standard models like NN or CNNs with multi-data types have not been established.  The existing assumptions of researchers that RBMs work well on multi-data type datasets has been shown to have large limitations.  This area of study requires that benchmarks to be created for model performance with multi-data types.
+
+Research with RBMs and multi-data types have shown these architectures exhibit some success at processing an input of multiple data types.  Yet, the research has not shown that RBMs capture joint dataset features.  Other techniques or architectures need to be employed in order to capture these joint dataset features.
+
+A large research gap is detecting that joint data type features exist.  Research has no methods for detecting if correlated features exist between two data types.  The knowledge that correlated features exist give incentive to data users to exploit these correlations to create better machine learning models.   This paper sees the ability to detect correlated features within multi-data type datasets as a significant knowledge gap that could aid analysis future researchers and help train many datasets.
