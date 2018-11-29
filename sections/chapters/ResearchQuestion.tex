@@ -9,7 +9,12 @@ Concerning data that is composed of text and image data, there are feature inter
 
 %2. Autoencoders trained on a concatenation of text and image data will perform worse than autoencoders trained on one data type.  The purpose of comparing both data types to a single data type is to measure how well autoencoders handle multiple data types.
 
-1. A concatenation of text and image data types on an autoencoder can learn new data by training on test data each individual model missed and penalizing the model for outputs that match either individual model.  In this way, the combined model is penalized for learning the most obvious features from any individual model.  By training the model on test data missed by both individual models, the model has data it can learn and improve from.  The hope is that by preventing the model from learning either of the individual model's main features, that the model will learn joint features.  This methodology is akin to boost-trees, but done so with multiple data types.
+1. In classification problems, by measuring the number of correct test predictions made by a combined data type model, which were missed by individual type models, is a good method for detecting the existence of joint data type features.
+
+2. Joint data type features can be emphasized in a combined model by training the combined model on the data incorrectly classified by both individual models and penalizing the model when it predicts the same as either individual model.
+
+
+%1. A concatenation of text and image data types on an autoencoder can learn new data by training on test data each individual model missed and penalizing the model for outputs that match either individual model.  In this way, the combined model is penalized for learning the most obvious features from any individual model.  By training the model on test data missed by both individual models, the model has data it can learn and improve from.  The hope is that by preventing the model from learning either of the individual model's main features, that the model will learn joint features.  This methodology is akin to boost-trees, but done so with multiple data types.
 
 %4. Combining the output of image-based CNN and text-based NN will create a model that performs better than either individual model.
 
