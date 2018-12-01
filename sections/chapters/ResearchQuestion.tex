@@ -1,44 +1,22 @@
 \section{Research Question}
 
 
-%Concerning data that is composed of text and image data, there are feature interactions between data types that are measureable and in turn improve model performance?
-
-%1. Complex data types can be trained on the same simple model (CNN and NN) so that the model outperforms either individual model CNN or NN model.  This research question will investigate how well or poorly standard models work on multiple data types. It can compare this performance with industry standards.
-
-%1. LSTMs trained on a concatenation of text and image data will perform worse than LSTMs from one data type.  The purpose of comparing both data types to a single data type within LSTMs is to measure how well LSTMs handle multiple data types.  Current research uses LSTMs for both data types, but current research has not proven that doing so returns better results.
-
-%2. Autoencoders trained on a concatenation of text and image data will perform worse than autoencoders trained on one data type.  The purpose of comparing both data types to a single data type is to measure how well autoencoders handle multiple data types.
-
 % Need a benchmark dataset
 
-When applying boosting to multi-data type datasets by penalizing outputs that agree with individual model outputs, how does this affect the model's classification accuracy?
+When applying boosting to individual data type models, by using weakly trained multi-type CNNs for the ensemble models, how does this affect the model's performance in classification/regression?
 
-% Implications are 
+\subsection{Expounding on the Research Question}
+The idea for the research question hinges on the related work.  The related work concluded that when training multi-data type models, that these models only learn single data type features.  The implication is that joint data type features are less pronounced than single-data type features, or that because joint data type features may not match the type of the output that these features receive less negative feedback and so undergo less training.  From the reality that joint features are less pronounced, any modeling with joint features must consider single-data type features.  When this knowledge is given the context of current practice, it seems unwise to ditch single-data type models entirely.  Rather, models that detect joint features can be used in conjunction with single-data type features.  Such combination of models is known as an ensemble method, where multiple models are considered for the final output, since multiple semi-independent models tend to give better predictions than any single model.
 
-%Joint data type features can be emphasized by penalizing a combined model when it agrees with either individual model.
+Building on the idea of an ensemble method that uses joint data type features, the research question strong hinges on the theory that joint data type features are more complicated and nuanced than single-data type features.  The research question also acknowledges that current single-data type models are very good and have achieved good performance on existing benchmarks. It is likely that a joint model will not perform as well as either individual model, but instead aid the individual model's performance.  The general theory of aiding existing model performance sounds a lot like existing boosting and bagging methods on structured data.  These methods create weaker model, i.e. models that do not perform as well or only slightly better than random chance, and use those models to strengthen existing models.  The strengthening is done by identifying weak points in the model, e.g. misclassifications or poor regression predictions.  Boosting methods then build the weak models based on the poor performance of the main model.  The result is a main model with multiple weaker models to that offset weaknesses in the main model.  This is the general idea being proposed by the research question.
 
-%0. A combined data type RBM, which is penalized during training for agreeing with either individual model, will learn joint data type features, which can be observed to exist by producting a statistically significant number of correct classifications or low mean squared error, in the validation dataset.
+Now given that there is training data for the combined model, i.e. the data misclassified or poorly regressed by the main data on the training data, the only missing piece is the architecture for the combined model.  It would be simple enough to concatenate text and image pixel intensities together as the combined model.  Yet, this seems like a poor option.  Existing research has shown that more abstract data types like images are poorly handled by NNs and better handled by CNNs.  It seems reasonable for a base combined model to somehow include CNNs when including any image data.  The main challenge is how to include image data with CNNs and text data.
 
-%1. Moreover, the joint data type features will produce a model, when its output is averaged with existing models, that will improve the final model's accuracy.
+As was explained in the related work, CNNs group features based on their location.  CNN layers can either compress the data in half or compare features across groups.  The ability for CNNs to behave like a normal NN by comparing values across groups is an advantage.  If text data can be represented as one group, and image data as another group, then these can be compared in a NN fashion within a CNN.
 
-%1. Autoencoder output can emphasize joint data type features by penalizing outputs that agree with either individual outputs.
+Part of the proposed methodology of this paper is to use a CNN for the boosting model.  This CNN will combine image and text data in a very particular way.  The CNN will be twice as wide as the image.  The left side will contain the image, the right side will contain the text with surrounding whitespace. By creating two squares in the CNN, when layers are halved in size, text and image data are technically kept separate within the CNN.  Each layer that compares data between groups will capture relationships between the text and image.  This allows for the CNN to evolve text and image data, while developing separate and combined features. The strength of this architecture is that it allows image data to undergo convolutions while interacting with the text data.  A weakness of the model is that text data is trained on a CNN.  Yet, as the related work showed, CNNs are able to obtain decent performance with text data.
 
-%2. On multi-data type benchamrks (IAPR TC-12, Flickr 8K, Flickr 30K and MS COCO) joint data type features can be detected by combining a shallow CNN and shallow NN, as measured by correctly classifying a statistically significant number of predictions in the validation dataset that were missed by either individual model, by penalizing the joint model when its predictions are the same as either individual model.
-
-
-
-%1. In classification problems, by measuring the number of correct test predictions made by a combined data type model, which were missed by individual type models, is a good method for detecting the existence of joint data type features.
-
-%2. Joint data type features can be emphasized in a combined model by training the combined model on the data incorrectly classified by both individual models and penalizing the model when it predicts the same as either individual model.
-
-
-%1. A concatenation of text and image data types on an autoencoder can learn new data by training on test data each individual model missed and penalizing the model for outputs that match either individual model.  In this way, the combined model is penalized for learning the most obvious features from any individual model.  By training the model on test data missed by both individual models, the model has data it can learn and improve from.  The hope is that by preventing the model from learning either of the individual model's main features, that the model will learn joint features.  This methodology is akin to boost-trees, but done so with multiple data types.
-
-%4. Combining the output of image-based CNN and text-based NN will create a model that performs better than either individual model.
-
-
-
-
+The interesting part of this research is how it considers single-data type features.  These features are normally a problem when identifying joint data type features.  Yet, when only test data is used where single-data type features perform poorly, i.e. where misclassifications or poorly predicted regressions occur, this leaves an opportunity for training joint type features.
 
 %\section{Concepts}
 %The concepts presented in the research question explore how well each standard model performs when trained on multiple data types.  The outcome of the research will give better detail on how well each model handles multiple data types.  Moreover, the research will also include how well a model performs when feed features from each individual model.  The study will give baseline information to future researchers on how well each model handles being trained on combination of text and image data.  Future research can build on the models which perform best in both experimenting with new architectures and preprocessing the data.
