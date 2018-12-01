@@ -1,14 +1,21 @@
+
 \section{Abstract}
 
 Existing research has performed well doing machine learning on single data types.
 Yet, there is little research on machine learning with multiple data types. Of the
-existing research on multiple data types, the approach is to treat the features from
+existing research on multiple data types, the approach is to treat features from
 each data type as independent. This paper proposes that when modeling a single
 phenomenon with multiple data types, that some information is only captured by
-combining features from each data type.  In papers that explore multi-data type datasets, autoencoders are almost exclusively used for machine learning.  Yet, these papers admit that autoencoders and LSTMs tend to learn single type features instead of joint data type features.  This paper asks how using boosting techniques to penalize model outputs that agree with the single-data type model outputs will affect classification accuracy on common multi-data type benchmarks.  
+combining features from each data type.  Existing research into this area acknowledges that simply combining each data type is insufficient, since the model learns single data type features (Ngiam et al., YEAR).
+This paper proposes a combined model with penalized learning when the combined model agrees with either individual-type model.
+Penalizing for single-data type features will encourage joint feature learning.
+The result is a weak model that becomes useful when used in an ensemble with each individually trained model.  
 
 
-%There are no papers that train both data types on standard CNN or NN architectures.   This paper proposes training multi-data type datasets on standard CNN and NNs, as well as ideas for testing if architectures that have performed well with multi-data type datasets actually detect joint datatype features.  The paper proposes a methodology for identifying and analyzing feature relationships across data types.
+
+
+
+
 
 
 
