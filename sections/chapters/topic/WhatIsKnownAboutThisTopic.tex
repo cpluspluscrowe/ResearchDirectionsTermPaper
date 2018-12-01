@@ -1,6 +1,9 @@
 \subsection{What is known about this topic?}
 
-Little has been invested creating benchmarks on multi-data type datasets.  Rather, researchers have moved straight to using autoencoders because of their ability to handle complex data.  While this move has justification, moving away from many of the most standard models may not be the best move.  It is at least worth exploring training simple architectures on complex data as benchmarks.  
+Little has been invested creating benchmarks on multi-data type datasets.  Rather, researchers have moved straight to using auto-encoders because of their ability to handle complex data.
 
-The research questions also include benchmarking the performance of LSTMs and autoencoders on multi-data type datasets.  This provides a point of reference for each model and their baseline performance with raw multi-type datasets.  From a baseline, these architectures can be configured to better perform, with reference to the benchmark.  Setting these benchmarks gives researchers on the strengths of each model type working on these datasets.  The benchmarks also make it easy to researchers to build better architectures for handling these data types.  This paper considers these benchmarks as fundamental steps for a researcher wanting to build on the existing knowledge on multi-data type datasets.
+While the use of auto-encoders and Restricted Boltzmann Machines (RBMs) have justification, these are limited in their application.  Auto-encoders and RBMs are generative models and are not used for classification or regression problems.  This leaves a gap for analyzing multi-data type datasets for the purpose of regression and classification.
+
+There is existing research on multi-data type datasets.  As previously mentioned, these analyze each data type separately.  The benefit of this existing research is that benchmarks exist for performance and training time.  This provides a reference point for the model methodology proposed by this paper to be compared against.  
+
 
