@@ -1,9 +1,7 @@
 \section{Research Question}
+What are the impacts on model performance in classification and regression scenarios when applying boosting with multi-type CNNs.
 
-
-% Need a benchmark dataset
-
-When applying boosting to individual data type models, by using weakly trained multi-type CNNs for the ensemble models, how does this affect the model's performance in classification/regression?
+%When applying boosting to individual data type models, by using weakly trained multi-type CNNs for the ensemble models, how does this affect the model's performance in classification/regression?
 
 \subsection{Expounding on the Research Question}
 The idea for the research question hinges on the related work.  The related work concluded that when training multi-data type models, that these models only learn single data type features.  The implication is that joint data type features are less pronounced than single-data type features, or that because joint data type features may not match the type of the output that these features receive less negative feedback and so undergo less training.  From the reality that joint features are less pronounced, any modeling with joint features must consider single-data type features.  When this knowledge is given the context of current practice, it seems unwise to ditch single-data type models entirely.  Rather, models that detect joint features can be used in conjunction with single-data type features.  Such combination of models is known as an ensemble method, where multiple models are considered for the final output, since multiple semi-independent models tend to give better predictions than any single model.
